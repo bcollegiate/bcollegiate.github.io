@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minecraft Links + SMP AD</title>
-  <!-- favicon placeholder: place your icon file in same folder and update href -->
+  <!-- ph to place favicon (little small image when opening tab idk) -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
@@ -112,12 +112,32 @@
       - Fixed End portal timer plugin, added a hologram to show the time remaining until the end portal opens, and added a config option to block access to the end portal frame until the portal is open<br>
       - Added a tuff background image to the site, lowk needed something cool <br>
     </li>
+      <li>V.1.0.6 (5-3-2026):<br>
+      - Removed Grim AC and added a lighter one, with less false positives <br>
+      - Addded an ELO system (based on kills and deaths) and a leaderboard for the top 5 players with the highest ELO
+      <p style="padding-left: 30px;">[Command: /battletracker]<br></p>
+      - Re-added the ClickVillagers Plugin (ability to pick up villagers, and keep their trades and professions)<br>
+      <p style="padding-left: 30px;">[To pickup: Right Click a vilager while shifting, and it will drop as a head with the villager's profession, and place it on the ground to spawn it, it will preserve its data even if its picked up]<br></p>
+      - Fixed internet lmao<br>
   </ul>
 
-  <!-- placeholder for bottom image -->
+  <!-- ph for bottom image -->
   <div style="margin-top:40px; text-align:center;">
-    <img src="stamp.png" alt="???" style="max-width:20%; height:auto;">
+    <!-- give the img an id so we can target it -->
+    <img id="stampImg" src='stamp1.png' alt="???" style="max-width:20%; height:auto;">
   </div>
+
+  <!-- randomize stamp image between stamp1.png and stamp10.png on each load -->
+  <script>
+    (function() {
+      const max = 10;
+      const randNum = Math.floor(Math.random() * max) + 1; // 1..10
+      const el = document.getElementById('stampImg');
+      if (el) {
+        el.src = `stamp${randNum}.png`;
+      }
+    })();
+  </script>
 </div>
 </body>
 </html>
