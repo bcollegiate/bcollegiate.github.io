@@ -130,8 +130,8 @@
   <!-- randomize stamp image between stamp1.png and stamp10.png on each load -->
   <script>
     (function() {
-      const max = 10;
-      const randNum = Math.floor(Math.random() * max) + 1; // 1..10
+      const max = 13;
+      const randNum = Math.floor(Math.random() * max) + 1; // 1..13
       const el = document.getElementById('stampImg');
       if (el) {
         el.src = `stamp${randNum}.png`;
