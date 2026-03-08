@@ -55,84 +55,15 @@
   <h3>Also, please join the discord server as a way to support and to meet other players in this server!</h3>
   <p><a href="https://discord.gg/5bdkA8dk7P">discord.gg/5bdkA8dk7P</a></p>
 
-  <h5>School SMP IP (inside of school playing, java/eagler ip): 10.111.17.75:25565</h5>
-  <h5>Online SMP IP (outside of school playing, java only ip): care-packet.gl.joinmc.link</h5>
-  <h5>Minecraft Links Website (in school only, java/eagler ip): 10.111.17.75:25565</h5>
-  <h5>Minecraft Links Website (accessible anywhere!, website): <a href="https://bcollegiate.github.io">bcollegiate.github.io</a></h5>
-  <h5>EaglerCraft Online SMP IP (outside of school playing in eaglercraft, eagler ip): wss://uncancellable-maryetta-nonallegorical.ngrok-free.dev</h5>
+  <h2>Quick Links:</h2>
+  <p><a href="links/">Client Links</a></p>
+  <p><a href="rules/">Server Rules</a></p>  <p><a href="updates/">Updates</a></p>
 
-  <div class="links">
-    <p><a href="1.5.2.html">Eagler 1.5.2</a></p>
-    <p><a href="1.8.8.html">Eagler 1.8.8</a></p>
-    <p><a href="1.8.8p.html">Eagler 1.8.8 (Pixel Client)</a></p>
-    <p><a href="1.8.8res.html">Eagler 1.8.8 (Resent Client)</a></p>
-    <p><a href="1.12.2.html">Eagler 1.12.2</a></p>
-    <p><a href="1.12.2tuff.html">Eagler 1.12.2 (Tuff Client) - Most <ruby>recommended</ruby> when playing the server!</a></p>
-    <p><a href="1.12.2p.html">Eagler 1.12.2 (Pixel Cleint)</a></p>
-  </div>
-
-  <h3>Server Patch Notes (Collegiate SMP - Season 2):</h3>
-  <ul>
-    <li> <b>V.1.0 (26-2-2026):</b> Created server, ability to use voice chat in EaglerCraft in version 1.8.8!</li>
-    <li> <b>V.1.0.1 (26-2-2026):</b><br>
-      - Added /tpa, /back, and /home commands<br>
-      - Set world border to 10k blocks (5k to -5k on every axis)<br>
-      - Fixed a few things on the backend (LAN MOTD showcasing being set to default)
-    </li>
-    <li> <b>V.1.0.2 (26-2-2026):</b><br>
-      - Added /warp command<br>
-      - Added /home command<br>
-      - Fixed problem where eagler players couldn't join the server outside of school<br>
-      - Fixed problem where eagler players couldn't load anything below y=0 (selective)<br>
-      - Created EaglerCraft IP for outside school!
-    </li>
-    <li> <b>V.1.0.3 (27-2-2026):</b><br>
-      - Fixed many backend related problems (random crashes, hosting lag, etc)<br>
-      - Added a backend server status page (unviewable to the public, but it is used to monitor the server's status)<br>
-      - Your head now drops when killed by a player<br>
-      - Silk touch works on spawners<br>
-      - New tab page (allows you to see ping, server tps, etc.)<br>
-      - Combat Logging (30 seconds long, inability to use any teleport/home commands when combat tagged)<br>
-    </li>
-    <li> <b>V.1.0.4 (28-2-2026):</b><br>
-      - Added some anti-cheat plugins<br>
-      - Fixed boat combat log glitch<br>
-      - Fixed block range combat log glitch<br>
-      - Added 5 minute spawn protection when you respawn<br>
-      - Fixed string duping issue, added a plugin to re-add string duping<br>
-      - Locked the end (for future use)<br>
-      - A lot of tab fixes, had the inability to show correct tab data + site info<br>
-    </li>
-    <li> <b>V.1.0.5 (1-3-2026):</b><br>
-      - Added spark for performance monitoring<br>
-      - Added Simple VoiceChat for Java players only<br>
-      - Added Chunky, pre-generated the entirety of the 5k world for much easier chunk loading<br>
-      - Fixed a bunch of permissions with LuckPerms, added a lot of permissions for future use<br>
-      - Added a lot of backend optimizations and fixes<br>
-      - Fixed End portal timer plugin, added a hologram to show the time remaining until the end portal opens, and added a config option to block access to the end portal frame until the portal is open<br>
-      - Added a tuff background image to the site, lowk needed something cool <br>
-    </li>
-      <li> <b>V.1.0.6 (5-3-2026):</b><br>
-      - Removed Grim AC and added a lighter one, with less false positives <br>
-      - Addded an ELO system (based on kills and deaths) and a leaderboard for the top 5 players with the highest ELO
-      <ul><li>[Command: /battletracker]</li></ul>
-      - Re-added the ClickVillagers Plugin (ability to pick up villagers, and keep their trades and professions)<br>
-      <ul><li>[To pickup: Right Click a vilager while shifting, and it will drop as a head with the villager's profession, and place it on the ground to spawn it, it will preserve its data even if its picked up]</li></ul>
-      - Added /shop plugin (jesse ur not stopping me, also I minimalized it)<br>
-
-      - Fixed internet lmao<br>
-    <li> <b>V.1.0.7 (7-3-2026):</b><br>
-      - <b>DIFFICULTY:</b> Easy mode -> Hard Mode<br>
-      <ul><li>[This is permanent]<br></li></ul>
-      - Drastically increased netherite prices<br>
-      - Official rules added to website
-    </li>
-  </ul>
 
   <!-- ph for bottom image -->
   <div style="margin-top:40px; text-align:center;">
     <!-- give the img an id so we can target it -->
-    <img id="stampImg" src='stamp1.png' alt="???" style="max-width:20%; height:auto;">
+    <img id="stampImg" src='stamps/stamp1.png' alt="???" style="max-width:20%; height:auto;">
   </div>
 
   <!-- randomize stamp image between stamp1.png and stamp10.png on each load -->
@@ -142,7 +73,7 @@
       const randNum = Math.floor(Math.random() * max) + 1; // 1..13
       const el = document.getElementById('stampImg');
       if (el) {
-        el.src = `stamp${randNum}.png`;
+        el.src = `stamps/stamp${randNum}.png`;
       }
     })();
   </script>
