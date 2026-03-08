@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Links + SMP AD</title>
+  <!-- ph to place favicon (little small image when opening tab idk) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* background image set to bg.png */
+      background: #ffffff url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 4px;
+    }
+    h1 {
+      color: #b7c0cd;
+      text-align: center;
+    }
+    h3, h5, h6 {
+      margin-top: 1.2em;
+    }
+    a {
+      color: #b4cbff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .links p {
+      margin: 0.5em 0;
+    }
+    ul {
+      margin-left: 1em;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Minecraft Links + SMP AD (found by baxkz)</h1>
+
+
+  <h3>Server Rules (Collegiate SMP - Season 2):</h3>
+  <ul>
+    <li><b>1:</b> Griefing spawn is disallowed (spawn is defined as the 200-block radius around the center of the world)</li>
+    <li><b>2:</b> No cheating/using mods that give you an unfair advantage.</li>
+    <li><b>3:</b> Beyond the spawn, griefing/any form of vandalism <b>is allowed.</b> (you read that right)</li>
+    <li><b>4:</b> Do not spawn kill other players, <b>ESPECIALLY NEW PLAYERS.</b> (allowed in some cases, refer to rule #5.)</li>
+    <ul><li><b>4a:</b> You can start fights at spawn. (again, dont kill new players.)</li></ul>
+    <li><b>5:</b> Griefing and bed trapping is allowed beyond the spawn, but keep it away and unrelated to spawn, Also: don't elo farm the trapped.</li>
+    <li><b>6:</b> <b>DO NOT ELO FARM.</b></li>
+    <ul><li><b>6a:</b> This is defined as getting a player to help you to directly farm kills, to farm elo. (This can be also defined as rule #4.)</li>
+    </ul>
+    <li><b>7:</b> <b>DO NOT KILL THE PLAYER NAMED "Socrates" or GRIEF ANY OF THEIR BUILDS.</b> (pretty please)</li>
+    <li><b>8:</b> Breaking of any of these rules result in warnings, but if you get enough of them, you may be banned. (up to the mods' decision, permanent bans are never issued.)</li>
+    </ul>
+
+
+  <!-- ph for bottom image -->
+  <div style="margin-top:40px; text-align:center;">
+    <!-- give the img an id so we can target it -->
+    <img id="stampImg" src='stamp1.png' alt="???" style="max-width:20%; height:auto;">
+  </div>
+
+  <!-- randomize stamp image between stamp1.png and stamp10.png on each load -->
+  <script>
+    (function() {
+      const max = 13;
+      const randNum = Math.floor(Math.random() * max) + 1; // 1..13
+      const el = document.getElementById('stampImg');
+      if (el) {
+        el.src = `stamp${randNum}.png`;
+      }
+    })();
+  </script>
+</div>
+</body>
+</html>
